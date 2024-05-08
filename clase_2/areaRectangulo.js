@@ -1,0 +1,25 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+console.log(5 * 10);
+var base = 5;
+var altura = 10;
+var area = base * altura;
+console.log("el area del rectangulo es " + area);
+console.log("comprar");
+console.log("azucar y aceite");
+var saludo = "Hola Compas";
+console.log(saludo);
+var numero = 10;
+console.log(numero);
+numero = 20;
+console.log(numero);
+console.log("\n");
+console.log("\n");
+// ahora repetimos el calculo del area, pero el usuario ingresa los datos por pantalla
+var readlineSync = require("readline-sync");
+var base2 = readlineSync.questionInt("Ingrese la medida de la base: ");
+console.log("Medida de la base: " + base2);
+var altura2 = readlineSync.questionInt("Ingrese la medida de la altura: ");
+console.log("Medida de la altura: " + altura2);
+var area2 = base2 * altura2;
+console.log("El area del rectangulo es: " + area2);

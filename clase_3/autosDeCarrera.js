@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var readlineSync = require("readline-sync");
+var vuelta1 = readlineSync.questionInt("tiempo primer vuelta: ");
+var vuelta2 = readlineSync.questionInt("tiempo segunda vuelta: ");
+var vuelta3 = readlineSync.questionInt("tiempo tercer vuelta: ");
+var vuelta4 = readlineSync.questionInt("tiempo cuarta vuelta: ");
+var tiempoTotal = vuelta1 + vuelta2 + vuelta3 + vuelta4;
+console.log("Tiempo total: " + tiempoTotal);
+var promedioDeVuelta = tiempoTotal / 4;
+console.log("El promedio de vuelta es de: " + promedioDeVuelta);
