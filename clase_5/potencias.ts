@@ -23,6 +23,9 @@ import * as rls from 'readline-sync';
     if (exponente >0){
         resultado = calcularExponente(base, exponente);
         console.log("El resultado es: " + resultado);
+    }else if (exponente ==0){
+        resultado = 1
+        console.log("El resultado es: " + resultado)
     }else{
         console.log("Por favor ingrese un exponente mayor a 0")
     }
